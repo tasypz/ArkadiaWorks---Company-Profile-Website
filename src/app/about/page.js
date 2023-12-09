@@ -139,33 +139,38 @@ export default async function About() {
         </div>
       </div>
 
-      {clevel.map((teams, i) => {
-        return (
-          <div className="grid grid-cols-2 py-3 mb-5 max-w-3xl text-center content-center m-auto ">
-            <div className="flex flex-col justify-center items-center ml-5">
-              <Image
-                src={teams.picture.large}
-                width={175}
-                height={0}
-                quality={100}
-                className="rounded-full"
-              />
-            </div>
-            <div className="flex flex-col justify-center items-center mx-5 ">
-              <p className="md:text-lg sm:text-sm text-sm font-bold text-sky-950">
-                {descObj[i].jobtitle}
-              </p>
-              <p className="md:text-[16px] sm:text-[14px] text-[12px] font-semibold text-sky-950">
-                {teams.name.first} {teams.name.last}
-              </p>
-              <p className="md:text-[16px] sm:text-[14px] text-[12px] font-thin text-black">
-                {descObj[i].description}
-              </p>
-            </div>
-          </div>
-        );
-      })}
-
+      <div className="grid grid-cols-2 py-3 mb-2 max-w-3xl text-center content-center m-auto gap-5">
+        {clevel.map((teams, i) => {
+          return (
+            <>
+              <div
+                className="flex flex-col justify-center items-center ml-5 "
+                key={teams.id.value}
+              >
+                <Image
+                  src={teams.picture.large}
+                  width={175}
+                  height={0}
+                  quality={100}
+                  className="rounded-full"
+                  alt="clevel"
+                />
+              </div>
+              <div className="flex flex-col justify-center items-center mx-5 ">
+                <p className="md:text-lg sm:text-sm text-sm font-bold text-sky-950">
+                  {descObj[i].jobtitle}
+                </p>
+                <p className="md:text-[16px] sm:text-[14px] text-[12px] font-semibold text-sky-950">
+                  {teams.name.first} {teams.name.last}
+                </p>
+                <p className="md:text-[16px] sm:text-[14px] text-[12px] font-thin text-black">
+                  {descObj[i].description}
+                </p>
+              </div>
+            </>
+          );
+        })}
+      </div>
       <div className="container md:max-w-6xl m-auto text-justify mb-3 px-2">
         <p className="md:text-3xl sm:text-2xl text-base text-center pt-16n font-bold pt-10 pb-5 text-sky-900">
           WHY US?
