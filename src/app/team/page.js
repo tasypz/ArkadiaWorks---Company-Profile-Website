@@ -40,7 +40,7 @@ export default async function Team() {
           {data.map((teams, i) => {
             return (
               <div
-                className=" flex flex-col items-center rounded-xl shadow-md shadow-slate-800 md:mx-10 sm:mx-10 mx-14"
+                className=" flex flex-col items-center rounded-xl shadow-md shadow-slate-800 md:mx-10 sm:mx-10 mx-16"
                 key={teams.id.value}
               >
                 <Image
@@ -48,6 +48,7 @@ export default async function Team() {
                   width={100}
                   height={0}
                   className="py-3 rounded-3xl"
+                  alt="teams"
                 />
                 <p className="font-bold md:text-lg sm:text-base text-sm text-sky-950">
                   {teams.name.first} {teams.name.last}
