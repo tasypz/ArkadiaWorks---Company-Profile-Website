@@ -40,7 +40,7 @@ export default async function Team() {
           {data.map((teams, i) => {
             return (
               <div
-                className=" flex flex-col items-center rounded-xl shadow-md shadow-slate-800 md:mx-10 sm:mx-10 mx-24"
+                className=" flex flex-col items-center rounded-xl shadow-md shadow-slate-800 mx-10"
                 key={teams.id.value}
               >
                 <Image
