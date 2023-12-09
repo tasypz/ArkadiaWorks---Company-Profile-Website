@@ -63,7 +63,7 @@ export default function Home() {
               reflections of our commitment to excellence."
             </p>
 
-            <div className="w-full md:h-[30rem] sm:h-[26rem] h-[24rem] relative flex mb-3">
+            <div className="w-full h-[30rem] relative flex mb-3">
               <Image src="/Page2.jpg" className="object-cover" fill />
               <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-slate-300 opacity-80 p-5">
                 <h1 className="md:text-lg sm:text-base text-sm text-center font-bold md:pb-3 sm:pb-2 pb-1">
