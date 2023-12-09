@@ -11,12 +11,12 @@ export default function Navbar() {
               <Image
                 src="/Logo_Arkadia.jpg"
                 alt="logo"
-                width={80}
+                width={100}
                 height={0}
               />
             </Link>
           </div>
-          <ul className="flex md:gap-20 sm:gap-10 gap-1 md:text-xl sm:text-base text-xs font-semibold text-sky-900 ">
+          <ul className="flex md:gap-20 sm:gap-10 gap-2 md:text-xl sm:text-base text-xs font-semibold text-sky-900 ">
             <Link href="/">
               <li className="hover:font-bold hover:text-slate-600">Home</li>
             </Link>
