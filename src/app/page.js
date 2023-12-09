@@ -23,7 +23,7 @@ export default function Home() {
   return (
     <>
       <div className="w-full h-[24rem] relative flex">
-        <Image src="/Page1.jpg" className="object-cover" fill />
+        <Image src="/Page1.jpg" className="object-cover" alt="hero" fill />
         <p
           className="absolute text-white font-bold inset-y-32
         md:text-4xl md:left-[20rem] 
