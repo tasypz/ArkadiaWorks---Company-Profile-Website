@@ -1,113 +1,199 @@
-import Image from 'next/image'
+import Image from "next/image";
+import Link from "next/link";
+
+function Testimoni(props) {
+  return (
+    <>
+      <div className="flex flex-row gap-2 md:col-span-2 sm:col-span-3 col-span-6 items-center border-2 p-3 border-slate-400 rounded-lg shadow-xl">
+        <Image src={props.image} alt="client" width={70} height={0} />
+        <div className="flex flex-col">
+          <p className="md:text-base sm:text-[15px] text-[13px] font-bold text-sky-900">
+            {props.name}
+          </p>
+          <p className="md:text-sm sm:text-[13px] text-[12px]">
+            "{props.testimoni}"
+          </p>
+        </div>
+      </div>
+    </>
+  );
+}
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.js</code>
+    <>
+      <div className="w-full h-[24rem] relative flex">
+        <Image src="/Page1.jpg" className="object-cover" fill />
+        <p
+          className="absolute text-white font-bold inset-y-32
+        md:text-4xl md:left-[20rem] 
+        sm:text-2xl sm:left-[10rem] 
+        text-lg left-[5rem]"
+        >
+          WELCOME TO ARKADIA WORKS
         </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+        <p
+          className="absolute text-white font-bold top-[12rem]
+        md:text-xl  md:left-[32rem] 
+        sm:text-base sm:left-[16rem]
+        text-sm left-[8rem]"
+        >
+          Your Vision, Our Expertise:
+        </p>
+        <p
+          className="absolute text-white font-bold  top-[14rem] 
+        md:text-xl md:left-[36rem] 
+        sm:text-base sm:left-[18rem]
+        text-sm left-[3rem]"
+        >
+          Crafting Exceptional Interiors, One Space at a Time.
+        </p>
+      </div>
+
+      <div className="relative mt-9 mb-1 flex m-auto px-2">
+        <div className="container max-w-5xl bg-slate-200 m-auto text-justify mb-0 pb-0">
+          <div className="max-w-3xl m-auto mt-5">
+            <p className="md:text-3xl sm:text-xl text-base text-sky-950 font-bold text-center p-auto">
+              CREATING ARCHITECTURAL SYMPHONIES ACROSS INDONESIA{" "}
+            </p>
+            <p className="md:text-base sm:text-xs text-xs font-bold text-slate-900 mt-2 p-auto">
+              "Transforming tradition into innovation, redefining the
+              architectural horizon in Indonesia. We blend modernity with
+              cultural richness, crafting spaces that stand as timeless
+              reflections of our commitment to excellence."
+            </p>
+
+            <div className="w-full md:h-[30rem] sm:h-[26rem] h-[24rem] relative flex mb-3">
+              <Image src="/Page2.jpg" className="object-cover" fill />
+              <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-slate-300 opacity-80 p-5">
+                <h1 className="md:text-lg sm:text-base text-sm text-center font-bold md:pb-3 sm:pb-2 pb-1">
+                  Architecture in Context
+                </h1>
+                <p className="md:text-[16px] sm:text-[14px] text-[12px] ">
+                  Founded in 2016, Arkadia stands as a prominent architectural
+                  firm, drawing inspiration from the rich cultural tapestry and
+                  diverse landscapes of Indonesia. As a leading exponent of
+                  architectural design, we are dedicated to creating structures
+                  that seamlessly integrate with the unique physical and
+                  cultural context of Indonesia.
+                </p>
+                <Link href="/about">
+                  <button className="font-bold text-left w-20 pt-1 md:text-lg sm:text-base text-sm hover:text-sky-700">
+                    More...
+                  </button>
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div className="container max-w-6xl m-auto px-2 text-justify">
+        <p
+          className="text-center font-bold text-sky-900
+        md:text-3xl md:pt-10 md:pb-5 
+        sm:text-xl sm:pt-5 sm:pb-3
+        text-base pt-3 pb-1 "
+        >
+          WHAT DO WE OFFER?
+        </p>
+        <div className="grid md:grid-cols-2 sm:grid-cols-1 grid-cols-1 mb-10 p-auto relative">
+          <Image
+            src="/Page3.jpg"
+            width={600}
+            height={600}
+            className="mt-5 object-cover m-auto"
+          />
+          <div className="m-auto pl-5 pr-5 text-justify">
+            <p className="md:text-[16px] sm:text-[14px] text-[12px] text-sky-900 pt-2">
+              Immerse yourself in bespoke design solutions with our
+              architectural and interior design services, where innovation meets
+              functionality. From visionary architectural concepts to
+              personalized interior designs, we offer a holistic approach to
+              transforming spaces. Our expert team ensures a seamless journey,
+              providing unique solutions that resonate with your vision and
+              elevate your environment.
+            </p>
+            <Link href="/services">
+              <button className="font-bold text-left text-sky-900 mt-1 md:text-lg sm:text-base text-sm hover:text-sky-600">
+                More...
+              </button>{" "}
+            </Link>
+          </div>
+        </div>
+        <Link href="/services">
+          <div className="container grid md:grid-cols-5 sm:grid-cols-3 grid-cols-1 m-auto p-auto ">
+            <div className="box-content w-48 p-4 bg-slate-100 hover:bg-slate-200 flex flex-col items-center m-auto">
+              <p className="md:text-lg sm:text-base text-sm font-bold text-center text-sky-950 pb-5">
+                MASTER PLANNING
+              </p>
+              <Image src="/plan.png" alt="logo" width={70} height={0} />
+            </div>
+            <div className="box-content w-48 p-4 bg-slate-200 hover:bg-slate-300 flex flex-col items-center m-auto">
+              <p className="md:text-lg sm:text-base text-sm  font-bold text-center text-sky-950 pb-5">
+                RENOVATION
+              </p>
+              <Image src="/renovation.png" alt="logo" width={70} height={0} />
+            </div>
+            <div className="box-content w-48 p-4 bg-slate-300 hover:bg-slate-400 flex flex-col items-center m-auto">
+              <p className="md:text-lg sm:text-base text-sm  font-bold text-center text-sky-950 pb-5">
+                INTERIOR DESIGN
+              </p>
+              <Image src="/interior.png" alt="logo" width={70} height={0} />
+            </div>
+            <div className="box-content w-48 p-4 bg-slate-400 hover:bg-slate-500 flex flex-col items-center m-auto">
+              <p className="md:text-lg sm:text-base text-sm  font-bold text-center text-sky-950 pb-5">
+                URBAN DESIGN
+              </p>
+              <Image src="/urban.png" alt="logo" width={70} height={0} />
+            </div>
+            <div className="box-content w-48 p-4 bg-slate-500 hover:bg-slate-600 flex flex-col items-center m-auto">
+              <p className="md:text-lg sm:text-base text-sm  font-bold text-center text-sky-950  pb-5">
+                LANDSCAPE DESIGN
+              </p>
+              <Image src="/park.png" alt="logo" width={70} height={0} />
+            </div>
+          </div>
+        </Link>
+
+        <div className="container w-full m-auto text-justify bg-gray-100 mt-10 pb-10">
+          <p className="md:text-3xl sm:text-xl text-base text-left font-bold pt-10 pb-5 text-sky-900 p-10">
+            WHAT DID THEY SAY ABOUT US?
+          </p>
+          <div className="grid grid-cols-6 m-auto justify-items-center items-center max-w-5xl gap-10 mx-14">
+            <Testimoni
+              image="/clientA.jpg"
+              name="David M."
+              testimoni="Incredible architectural prowess—our space now feels like a personalized masterpiece."
+            />
+            <Testimoni
+              image="/clientB.jpg"
+              name="Emma L."
+              testimoni="Custom home design captured our unique style flawlessly, a truly remarkable experience."
+            />
+            <Testimoni
+              image="/clientC.jpg"
+              name="Alex R."
+              testimoni="Landscape architecture project showcased an astounding attention to detail and natural integration."
+            />
+            <Testimoni
+              image="/clientD.jpg"
+              name="Sarah K."
+              testimoni="Interior design brilliance; the before-and-after images tell the story of a transformative space."
+            />
+            <Testimoni
+              image="/clientE.jpg"
+              name="Evan G."
+              testimoni="Custom home design that not only met but also understood our lifestyle and aspirations."
+            />
+            <Testimoni
+              image="/clientF.jpg"
+              name="Liam W."
+              testimoni="Their personalized approach brought my dream home to life, surpassing all expectations."
+            />
+          </div>
+        </div>
       </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+    </>
+  );
 }
