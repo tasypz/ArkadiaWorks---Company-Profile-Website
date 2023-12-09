@@ -5,7 +5,7 @@ export default function Navbar() {
   return (
     <>
       <div className=" bg-white top-0 left-0 z-10">
-        <div className="flex justify-between max-w-7xl items-center m-auto h-20">
+        <div className="flex justify-between max-w-7xl items-center m-auto h-16">
           <div className="flex gap-3justify-center items-center">
             <Link href="/">
               <Image
