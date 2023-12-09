@@ -50,8 +50,6 @@ export default async function About() {
     },
   ];
 
-  console.log(descObj[0].description);
-
   return (
     <>
       <div className="container max-w-4xl m-auto px-6 pt-10">
