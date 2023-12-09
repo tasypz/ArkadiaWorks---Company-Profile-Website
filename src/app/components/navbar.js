@@ -6,12 +6,12 @@ export default function Navbar() {
     <>
       <div className=" bg-white top-0 left-0 z-10">
         <div className="flex justify-between max-w-7xl items-center m-auto h-20">
-          <div className="flex gap-3 ">
+          <div className="flex gap-3justify-center items-center">
             <Link href="/">
               <Image
                 src="/Logo_Arkadia.jpg"
                 alt="logo"
-                width={180}
+                width={120}
                 height={0}
               />
             </Link>
