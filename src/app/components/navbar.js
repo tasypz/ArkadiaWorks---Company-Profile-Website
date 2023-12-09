@@ -11,7 +11,7 @@ export default function Navbar() {
               <Image
                 src="/Logo_Arkadia.jpg"
                 alt="logo"
-                width={100}
+                width={120}
                 height={0}
               />
             </Link>
