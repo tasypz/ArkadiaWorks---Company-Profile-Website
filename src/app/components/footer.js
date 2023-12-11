@@ -18,18 +18,10 @@ export default function Footer() {
             TEL: +62 8111476793, FAX: +62 21 7433946
           </p>
           <ul className="flex flex-col gap-2 text-center md:text-[18px] sm:text-[14px] text-[12px] font-semibold text-white ">
-            <Link href="/">
-              <li className="hover:font-bold hover:text-slate-400">Home</li>
-            </Link>
-            <Link href="/about">
-              <li className="hover:font-bold hover:text-slate-400">About Us</li>
-            </Link>
-            <Link href="/services">
-              <li className="hover:font-bold hover:text-slate-400">Services</li>
-            </Link>
-            <Link href="/team">
-              <li className="hover:font-bold hover:text-slate-400">Our Team</li>
-            </Link>
+              <li className="hover:font-bold hover:text-slate-400"><Link href="/">Home</Link></li>
+              <li className="hover:font-bold hover:text-slate-400"><Link href="/about">About Us</Link></li>
+              <li className="hover:font-bold hover:text-slate-400"><Link href="/services">Services</Link></li>
+              <li className="hover:font-bold hover:text-slate-400"> <Link href="/team">Our Team</Link></li>
           </ul>
           <div className="flex flex-col text-center">
             <p className="md:text-[18px] sm:text-[14px] text-[12px] font-bold text-white mt-5 mb-2">
