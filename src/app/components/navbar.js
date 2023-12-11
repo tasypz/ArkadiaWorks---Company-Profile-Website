@@ -16,12 +16,12 @@ export default function Navbar() {
               />
             </Link>
           </div>
-          <ul className="flex md:gap-20 sm:gap-10 gap-2 md:text-xl sm:text-base text-xs font-semibold text-sky-900 ">
-              <li className="hover:font-bold hover:text-slate-600"><Link href="/">Home</Link></li>
-              <li className="hover:font-bold hover:text-slate-600"><Link href="/about">About Us</Link></li>
-              <li className="hover:font-bold hover:text-slate-600"> <Link href="/services">Services</Link></li>
-              <li className="hover:font-bold hover:text-slate-600"><Link href="/team">Our Team</Link></li>
-          </ul>
+          <ul className="flex md:gap-20 sm:gap-10 gap-2 md:text-xl sm:text-base text-xs font-semibold text-sky-900">
+  <li className="hover:font-bold hover:text-slate-600"><Link href="/">Home</Link></li>
+  <li className="hover:font-bold hover:text-slate-600"><Link href="/about">About Us</Link></li>
+  <li className="hover:font-bold hover:text-slate-600"><Link href="/services">Services</Link></li>
+  <li className="hover:font-bold hover:text-slate-600"><Link href="/team">Our Team</Link></li>
+</ul>
         </div>
       </div>
     </>
