@@ -28,6 +28,7 @@ export default function Services() {
               height={0}
               full
               className="rounded-xl"
+                alt="masterplan"
             />
           </div>
           <div className="flex flex-col justify-center items-center mr-5">
@@ -71,6 +72,7 @@ export default function Services() {
               height={0}
               full
               className="rounded-xl"
+                alt="renovation"
             />
           </div>
         </div>
@@ -83,6 +85,7 @@ export default function Services() {
               height={0}
               full
               className="rounded-xl"
+                alt="interiordesign"
             />
           </div>
           <div className="flex flex-col justify-center items-center mr-5">
@@ -124,6 +127,7 @@ export default function Services() {
               height={0}
               full
               className="rounded-xl"
+                alt="landscape"
             />
           </div>
         </div>
@@ -135,6 +139,7 @@ export default function Services() {
               height={0}
               full
               className="rounded-xl"
+                alt="urban"
             />
           </div>
           <div className="flex flex-col justify-center items-center mr-5">
@@ -163,7 +168,7 @@ export default function Services() {
 
       <div className="grid md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-4 mb-2 max-w-6xl text-center content-center  m-auto">
         <div className="flex flex-col justify-center items-center ml-5 md:pb-7">
-          <Image src="/projectA.jpg" width={3000} height={0} full />
+          <Image src="/projectA.jpg" width={3000} height={0} full alt="project"/>
           <p className="md:text-[14px] sm:text-[13px] text-[12px] font-bold text-sky-950 pt-2">
             Heritage Home Restoration
           </p>
@@ -174,6 +179,7 @@ export default function Services() {
             width={110}
             height={0}
             className="rounded-full"
+              alt="client"
           />
           <p className="md:text-lg sm:text-base text-sm font-bold text-sky-950">
             James Rodriguez
@@ -190,7 +196,7 @@ export default function Services() {
         </div>
 
         <div className="flex flex-col justify-center items-center ml-5 md:pb-7">
-          <Image src="/projectB.jpg" width={3000} height={0} full />
+          <Image src="/projectB.jpg" width={3000} height={0} full alt="project" />
           <p className="md:text-[14px] sm:text-[13px] text-[12px] font-bold text-sky-950 pt-2">
             Corporate Office Transformation
           </p>
@@ -201,6 +207,7 @@ export default function Services() {
             width={110}
             height={0}
             className="rounded-full"
+              alt="client"
           />
           <p className="md:text-lg sm:text-base text-sm font-bold text-sky-950">
             Emma Chen, CEO of HorizonTech Solutions
@@ -219,7 +226,7 @@ export default function Services() {
         </div>
 
         <div className="flex flex-col justify-center items-center ml-5 md:pb-7">
-          <Image src="/projectC.jpg" width={3000} height={0} full />
+          <Image src="/projectC.jpg" width={3000} height={0} full alt="project"/>
           <p className="md:text-[14px] sm:text-[13px] text-[12px] font-bold text-sky-950 pt-2">
             Zen Garden Retreat
           </p>
@@ -230,6 +237,7 @@ export default function Services() {
             width={110}
             height={0}
             className="rounded-full"
+              alt="client"
           />
           <p className="md:text-lg sm:text-base text-sm font-bold text-sky-950">
             Jennifer Martin
