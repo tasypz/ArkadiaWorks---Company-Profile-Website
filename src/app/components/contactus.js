@@ -5,7 +5,7 @@ export function Contact() {
   return (
     <>
       <div className="w-full md:h-[24rem] sm:h-[20rem] h-[16rem] relative flex mb-3 mt-5">
-        <Image src="/Page5.jpg" className="object-cover" fill />
+        <Image src="/Page5.jpg" className="object-cover" alt="contact" fill />
         <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
           <p className="md:text-3xl sm:text-2xl text-base text-center pt-16n font-bold pt-10 pb-5 text-white">
             WHAT ARE YOU WAITING FOR?
