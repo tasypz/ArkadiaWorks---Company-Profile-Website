@@ -64,7 +64,7 @@ export default function Home() {
             </p>
 
             <div className="w-full h-[32rem] relative flex mb-3">
-              <Image src="/Page2.jpg" className="object-cover" fill />
+              <Image src="/Page2.jpg" className="object-cover" fill alt="hero"/>
               <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-slate-300 opacity-80 p-5">
                 <h1 className="md:text-lg sm:text-base text-sm text-center font-bold md:pb-3 sm:pb-2 pb-1">
                   Architecture in Context
@@ -103,6 +103,7 @@ export default function Home() {
             width={600}
             height={600}
             className="mt-5 object-cover m-auto"
+              alt="hero"
           />
           <div className="m-auto pl-5 pr-5 text-justify">
             <p className="md:text-[16px] sm:text-[14px] text-[12px] text-sky-900 pt-2">
