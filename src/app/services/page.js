@@ -105,7 +105,7 @@ export default function Services() {
           </div>
         </div>
 
-        <div className="bg-slate-400 grid grid-cols-2 gap-4 mb-10 rounded-3xl mt-5">
+        <div className="bg-slate-200 grid grid-cols-2 gap-4 mb-10 rounded-3xl mt-5">
           <div className="flex flex-col justify-center items-center ml-5">
             <p className="md:text-2xl sm:text-xl text-base font-bold md:my-5 sm:my-3 my-1 text-sky-950">
               4. Landscape Design
@@ -131,7 +131,7 @@ export default function Services() {
             />
           </div>
         </div>
-        <div className="bg-slate-500 grid grid-cols-2 gap-4 mb-10 rounded-3xl mt-5">
+        <div className="bg-slate-100 grid grid-cols-2 gap-4 mb-10 rounded-3xl mt-5">
           <div className="flex flex-col justify-center items-center ml-10 py-7">
             <Image
               src="/urban.jpg"
