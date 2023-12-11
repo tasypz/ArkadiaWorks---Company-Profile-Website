@@ -17,7 +17,7 @@ export default function Footer() {
             <br />
             TEL: +62 8111476793, FAX: +62 21 7433946
           </p>
-          <ul className="flex flex-col gap-2 text-center md:text-[18px] sm:text-[14px] text-[13px] font-semibold text-white">
+          <ul className="flex flex-col gap-2 text-center md:text-[18px] sm:text-[14px] text-[12px] font-semibold text-white">
   <li className="hover:font-bold hover:text-slate-400" style="min-height: 48px;"><Link href="/">Home</Link></li>
   <li className="hover:font-bold hover:text-slate-400" style="min-height: 48px;"><Link href="/about">About Us</Link></li>
   <li className="hover:font-bold hover:text-slate-400" style="min-height: 48px;"><Link href="/services">Services</Link></li>
@@ -30,7 +30,7 @@ export default function Footer() {
             <input
               type="email"
               placeholder="Input your email here"
-              className="p-1 border-slate-400 rounded-lg text-center m-auto mb-2 md:w-150 sm:w-50 w-30 md:text-[16px] sm:text-[13px] text-[10px]"
+              className="p-1 border-slate-400 rounded-lg text-center m-auto mb-2 md:w-150 sm:w-50 w-25 md:text-[16px] sm:text-[13px] text-[10px]"
             ></input>
             <button className="bg-sky-700 hover:bg-sky-100 text-sky-100 hover:text-sky-700 rounded-lg text-center md:w-20 sm:w-16 w-10 m-auto md:text-[18px] sm:text-[14px] text-[10px] p-1 mt-1">
               Send
