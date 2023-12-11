@@ -65,7 +65,7 @@ export default async function About() {
           <Image
             src={"/ArkadiaWorks.jpg"}
             alt="ArkadiaTeam"
-            width={700}
+            width={400}
             height={0}
             className="self-center text-center items-center origin-center object-center"
           />
